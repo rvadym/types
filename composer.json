@@ -1,0 +1,32 @@
+{
+  "name": "rvadym/types",
+  "description": "Abstract types for value objects",
+  "license": "",
+  "type": "package",
+  "require": {
+    "php": "^7.3",
+    "ramsey/uuid": "@stable"
+  },
+  "require-dev": {
+    "phan/phan": "@stable",
+    "phpunit/php-code-coverage": "^7.0",
+    "phpunit/phpunit": "^8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Rvadym\\Types\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Test\\Rvadym\\Types\\": "tests/"
+    }
+  },
+  "scripts": {},
+  "config": {
+    "preferred-install": "source",
+    "bin-dir": "bin"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

@@ -2,9 +2,6 @@
 
 namespace Rvadym\Types\ValueObject;
 
-use Rvadym\Types\Validator\IntValidator;
-use Rvadym\Types\Validator\ValidatorInterface;
-
 abstract class AbstractInt extends AbstractValueObject
 {
     /** @var int */
@@ -18,11 +15,6 @@ abstract class AbstractInt extends AbstractValueObject
     public static function getDefaultValue()
     {
         return 0;
-    }
-
-    public function getValidator(): ValidatorInterface
-    {
-        return new IntValidator($this);
     }
 
     public function getValue(): int

@@ -12,6 +12,7 @@ abstract class AbstractId extends AbstractString
      * @return static
      * @throws UnsatisfiedDependencyException
      * @throws Exception
+     * @suppress PhanTypeInstantiateAbstractStatic
      */
     public static function create(): self
     {
